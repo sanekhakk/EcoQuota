@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco quota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="navbar"> 
+          <div class="logosmall">
+            <img style="width: 15%; margin-left: 5%;" src="logo.svg">
+          </div>
+            <a style="text-decoration: none;" href="welcomepage.html">Home</a>
+            <a style="text-decoration: none;padding-left: 3%" href="howitworks.html">How it works</a>
+            <a style="text-decoration: none;padding-left: 3%" href="calculator.html">Calculate</a>
+            
+        </div>
+        <br><br><br>
+    </div>
+     
+
+    <div id="calculator">
+        <h1 style="font-size: 300%;">Calculate Your Carbon Offset While Traveling</h1>
+        <label for="commute" required >Daily distance travelled (kilometers):</label><br>
+        <input type="number"  id="commute"  name="commute"><br>
+        <label for="vehicle">Vehicle type:</label><br>
+        <select id="vehicle" name="vehicle">
+            <option selected value="select">Select</option>
+          <option value="car">Car</option>
+          <option value="bus">Bus</option>
+          <option value="bike">Bike</option>
+          <option value="Train">Train</option>
+          <option value="Flight">Flight</option>
+        </select><br>
+        
+
+        <button onclick="calculateFootprinttravel()">Calculate Footprint</button><br>
+        <div id="result" style="display:none;">
+          <p style="color: rgb(227, 255, 237); font-size: larger;">Your carbon footprint is : <span id="footprint"></span></p>
+          <p style="color: rgb(227, 252, 232);font-size:150% ;">Here are some offsetting options:</p>
+          <ul id="option"></ul>
+        </div>
+      </div>
+<br><br><br><br>
+<footer>
+  <p>&copy; 2024 Eco Quota. All rights reserved.</p>
+</footer>
+
+      <script src="script.js"></script>
+
+</body>
+</html>

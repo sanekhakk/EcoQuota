@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco quota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="navbar"> 
+            <div class="logosmall">
+                <img style="width: 15%; margin-left: 5%;" src="logo.svg">
+              </div>
+            <a style="text-decoration: none;" href="welcomepage.html">Home</a>
+            <a style="text-decoration: none;padding-left: 3%" href="howitworks.html">How it works</a>
+            <a style="text-decoration: none;padding-left: 3%" href="calculator.html">Calculate</a>
+            
+        </div>
+        <br><br><br>
+    </div>
+
+    <div id="calculator">
+        <h1 style="font-size: 300%;">Calculate Your Carbon Offset at Home</h1>
+        <form id="carbonForm">
+            <label for="electricity">Electricity Usage (kWh):</label><br>
+            <input type="number" id="electricity" name="electricity" required><br><br>
+            
+            <label for="gas">Gas Usage (cubic meters):</label><br>
+            <input type="number" id="gas" name="gas" required><br><br>
+            
+            <label for="water">Water Usage (liters):</label><br>
+            <input type="number" id="water" name="water" required><br><br>
+            
+            <label for="waste">Waste Generation (kilograms):</label><br>
+            <input type="number" id="waste" name="waste" required><br><br>
+            
+            <button type="button" onclick="calculateCarbonFootprinthome()">Calculate</button>
+          </form>
+          <br>
+          <p style="color: rgb(255, 255, 255); font-size: 180%;" id="resulthome"> <span id="footprint"></span></p>
+          <p style="color: rgb(227, 252, 232);font-size:130% ;" id="offsethome"></p>
+          <br>
+          <br>
+          <br>
+          <br>
+
+        
+      </div>
+      <footer>
+        <p>&copy; 2024 Eco Quota. All rights reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>
